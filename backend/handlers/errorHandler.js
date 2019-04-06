@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-require('dotenv').config({ path: '../variables.env' });
+require('dotenv').config({ path: '../.env' });
 
 exports.error = (err, req, res, next) => {
     next(err);
@@ -16,7 +16,7 @@ exports.error = (err, req, res, next) => {
         subject: 'subject',
         html: `<div><h1>You have an error in your app</h1><p>It\'s awful</p> </div>`//////////////////////////////////////
     };
-    
+
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
           console.log(error);
@@ -25,5 +25,4 @@ exports.error = (err, req, res, next) => {
         }
     });
 };
-  
-  
+

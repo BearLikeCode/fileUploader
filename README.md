@@ -5,7 +5,7 @@ Test project. I have such tasks:
  - write to MongoDB alias from API and unique name of the file
  - if there is an error send notification on the email
 
- In folder backend in file variables.env you must insert properties for such variables:
+ In folder backend in file .env you must insert properties for such variables:
  - DATABASE
  - MAIL (By default I use gmail)
  - FROMLOGIN (It's a property for login in your email account.)
