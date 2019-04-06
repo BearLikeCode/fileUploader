@@ -1,6 +1,7 @@
 .idea
 .git
 .gitignore
+**/variables.env
 
 backend/node_modules
 backend/package-lock.json
