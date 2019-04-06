@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Main.scss';
+import './Main.scss';
 
 export class Main extends React.Component {
 
@@ -17,15 +17,17 @@ export class Main extends React.Component {
 
   render() {
     return (
-        <form className={s.block} onSubmit={this.handleUploadImage}>
-          <div>
-            <input ref={(ref) => { this.uploadInput = ref; }} type="file" />
-          </div>
-          <br />
-          <div>
-            <button>Upload</button>
-          </div>
-        </form>
+        <div className="block">
+            <form className="form" onSubmit={this.handleUploadImage}>
+              <div>
+                <input ref={(ref) => { this.uploadInput = ref; }} type="file" />
+              </div>
+              <br />
+              <div>
+                <button>Upload</button>
+              </div>
+            </form>
+        </div>
     );
   }
 }
