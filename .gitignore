@@ -1,5 +1,10 @@
+.idea
+.git
+.gitignore
+
 backend/node_modules
 backend/package-lock.json
+backend/variables.env
 
 frontend/node_modules
 frontend/README.md

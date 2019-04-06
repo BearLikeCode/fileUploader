@@ -1,12 +1,7 @@
 import React from 'react';
-const createDebug = require('debug')
-const debug = createDebug('foo')
+import s from './Main.scss';
 
-class Main extends React.Component {
-
-  state = {
-    imageURL: '',
-  }
+export class Main extends React.Component {
 
   handleUploadImage = ev => {
     ev.preventDefault();
@@ -18,19 +13,19 @@ class Main extends React.Component {
       method: 'POST',
       body: data,
     })
-  }
+  };
 
   render() {
     return (
-      <form onSubmit={this.handleUploadImage}>
-        <div>
-          <input ref={(ref) => { this.uploadInput = ref; }} type="file" />
-        </div>
-        <br />
-        <div>
-          <button>Upload</button>
-        </div>
-      </form>
+        <form className={s.block} onSubmit={this.handleUploadImage}>
+          <div>
+            <input ref={(ref) => { this.uploadInput = ref; }} type="file" />
+          </div>
+          <br />
+          <div>
+            <button>Upload</button>
+          </div>
+        </form>
     );
   }
 }
