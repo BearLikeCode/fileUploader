@@ -1,7 +1,7 @@
 # fileUploader
 Steps for start this project:
 1. Open folder frontend and folder backend then type in terminal ```npm i``` or ```npm install```
-2. In folder backend you must insert values for variables in file variables.env^
+2. In folder backend you must insert values for variables in file .env:
      - DATABASE
      - MAIL (By default I use gmail)
      - FROMLOGIN (It's a property for login in your email account.)
